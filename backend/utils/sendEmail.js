@@ -12,9 +12,15 @@ const sendEmail = async (option)  => {
       }); 
       const mailOption = {
         from: process.env.SMPT_MAIL || 'tarundevgan29.9.2003@gmail.com',
-        to: option.email,
-        subject: "Complete your Registration", 
-        text : `Your email verfication link is ${option.token} -- Note this is valid for 1 hour only!`,
+        to: 'devtar28k@gmail.com',
+        subject: "Contacting on GFG", 
+        text :   `
+        User - Name: ${option.name}
+        User - Email: ${option.email}
+        User - PhoneNo: ${option.phoneNo}
+        User - Course: ${option.course}
+        Message: ${option.message}
+    `
       };
     
       await trasporter.sendMail(mailOption)
