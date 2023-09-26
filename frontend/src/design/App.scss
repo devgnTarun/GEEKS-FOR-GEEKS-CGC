@@ -34,6 +34,9 @@
   margin: 0 10px;
 
 }
+.toggle_btn {
+  display: none;
+}
 
 .home_page {
   width: 100%;
@@ -191,7 +194,7 @@
   .left_content > p {
     font-size: 10px;
   }
-  .navList{
+  .navList_changed {
     width: 100%;
     top: 80px;
     position: fixed;
@@ -202,7 +205,11 @@
     justify-self: center;
     gap: 1;
     padding-bottom: 10px;
-    display: none;
+    filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
   }
-
+  .close_nav {
+  display: none;}
+  .toggle_btn {
+    display: flex;
+  }
 }
