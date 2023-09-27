@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const connectToMongo = () => {
-    mongoose.connect(process.env.URI).then((data)=>  {
+    mongoose.connect(process.env.URI ).then((data)=>  {
         console.log(`server connected to  ${data.connection.host}`)
     }
     ).catch((error) => {
